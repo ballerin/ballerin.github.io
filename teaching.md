@@ -4,10 +4,9 @@ page: "teaching"
 title: "Publications"
 ---
 
-<div class="w3-container w3-card w3-white">
+<h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Teaching duties</h2>
 
-  
-  <h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Teaching duties</h2>
+<div class="w3-container w3-card w3-white" style="padding: 32px 32px;">
   {% for t in site.data.teaching %}
   <div class="w3-container">
     <div class="w3-row">
@@ -27,5 +26,4 @@ title: "Publications"
   </div>
   {% unless forloop.last %}<hr>{% endunless %}
   {% endfor %}
-  
-  <div style="padding-top:16px;"></div>
+</div>

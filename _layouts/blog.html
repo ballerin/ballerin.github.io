@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Francesco's Blog</title>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/dbec1f44c5.js" crossorigin="anonymous"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js" integrity="sha512-W/UhCgUnBrqWd6HtR1wS+twNkVYvwxB1Hqtm9d/0HOWynEcr7t1BOQn1x55ziHQJtn+tU0Fzih1SAawRr6YFmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+html {
+            height:100%;
+            box-sizing: border-box;
+  }
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+* {
+  box-sizing: inherit;
+}
+section {
+  height: 100%
+}
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.page-header,
+.page-footer {
+    padding: 20px;
+}
+
+.page-body {
+    padding: 20px;
+}
+
+#tsparticles {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+</style>
+</head>
+<body style="height:100%; padding: 0; margin: 0;">
+    <!-- Background particles  -->
+    <div class="appearUnderContent" id="tsparticles"><canvas></canvas></div>
+
+    <!-- !PAGE CONTENT! -->
+    <section>
+    <div class="wrapper">
+        
+        <div class="w3-content" style="max-width:1500px; width:100%;">
+            {% include header_blog.html %}
+            
+            <main class="page-body">
+                <div class="w3-row">
+                    {{ content }}
+                </div>
+            </main>
+            <!-- End Page Content -->
+        </div>
+    </div>
+    {% include footer.html %}
+
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2.12.0/tsparticles.engine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-basic@2.12.0/tsparticles.basic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-interaction-particles-links@2.12.0/tsparticles.interaction.particles.links.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-move-base@2.12.0/tsparticles.move.base.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-circle@2.12.0/tsparticles.shape.circle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-color@2.12.0/tsparticles.updater.color.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-opacity@2.12.0/tsparticles.updater.opacity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-out-modes@2.12.0/tsparticles.updater.out-modes.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-size@2.12.0/tsparticles.updater.size.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.min.js"></script>
+<script type="text/javascript">
+    (async () => {
+        await loadLinksPreset(tsParticles);
+
+        await tsParticles.load("tsparticles", 
+        { background: {
+          color: '#FFFFFF'
+        },
+        particles: {
+          number: { density: { enable: true, area: 800 }, value: 40 },
+          color: {
+            value: '#000000'
+          },
+          opacity: {
+              value: 0.5
+          },
+          move: {
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+            bounce: false,
+            direction: "none",
+            enable: true,
+            out_mode: "out",
+            random: false,
+            speed: 1,
+            straight: false
+          },
+          lineLinked: {
+            color: {
+              value: '#999999'
+            },
+            consent: true
+          }
+        },
+        interactivity: {
+          detect_on: 'window',
+          resize: true,
+        },
+        preset: "links" ,
+      });
+    })();
+</script>
+</body>
+</html>

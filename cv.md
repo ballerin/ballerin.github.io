@@ -6,10 +6,11 @@ title: "CV"
 
 
 <!-- Work experience -->
-<div class="w3-container w3-card w3-white w3-margin-bottom">
-    <h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+<h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+
+<div class="w3-container w3-card w3-white w3-margin-bottom" style="padding: 32px 32px;">
     <div class="w3-container">
-        <h4 class="w3-opacity"><b>Junior Research Assistant</b></h4>
+        <h3 class="w3-opacity"><b>Junior Research Assistant</b></h3>
         <h5 class="w3-opacity"><b>FBK - Fondazione Bruno Kessler</b></h5>
         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2019</h6>
         <p>
@@ -22,11 +23,14 @@ title: "CV"
     </div>
 </div>
 
+
+
 <!-- Education -->
-<div class="w3-container w3-card w3-white">
-  <h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+<h2 class="w3-text-grey w3-padding-16 w3-center"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+
+<div class="w3-container w3-card w3-white" style="padding: 32px 32px;">
   <div class="w3-container">
-    <h4 class="w3-opacity"><b>PhD fellow in Mathematics</b></h4>
+    <h3 class="w3-opacity"><b>PhD fellow in Mathematics</b></h3>
     <h5 class="w3-opacity"><b>University of Bergen</b></h5>
     <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
     <p>Work in progress...</p>
@@ -34,7 +38,7 @@ title: "CV"
     <hr>
   </div>
   <div class="w3-container">
-    <h4 class="w3-opacity"><b>Master's degree in Mathematical Analysis</b></h4>
+    <h3 class="w3-opacity"><b>Master's degree in Mathematical Analysis</b></h3>
     <h5 class="w3-opacity"><b>University of Bergen</b></h5>
     <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - 2022</h6>
     <b>THESIS: Sub-Riemannian geometry and its applications to image processing</b>
@@ -42,7 +46,7 @@ title: "CV"
     <hr>
   </div>
   <div class="w3-container">
-    <h4 class="w3-opacity"><b>Bachelor's degree in Mathematics</b></h4>
+    <h3 class="w3-opacity"><b>Bachelor's degree in Mathematics</b></h3>
     <h5 class="w3-opacity"><b>University of Trento</b></h5>
     <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2020</h6>
     <b>THESIS: Active Contour Models for Image Segmentation and Motion Tracking</b>

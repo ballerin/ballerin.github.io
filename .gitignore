@@ -1,5 +1,9 @@
+# Local Jekyll files and caches
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Unpublished drafts
+_drafts
