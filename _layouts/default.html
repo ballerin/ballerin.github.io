@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Francesco Ballerin</title>
+<title>F. Ballerin{% if page.title %} : {{ page.title }}{% endif %}</title>
 <meta charset="UTF-8">
-<link rel="icon" type="image/x-icon" href="">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -32,59 +32,61 @@
     {% include footer.html %}
 
     </section>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2.12.0/tsparticles.engine.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-basic@2.12.0/tsparticles.basic.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-interaction-particles-links@2.12.0/tsparticles.interaction.particles.links.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-move-base@2.12.0/tsparticles.move.base.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-circle@2.12.0/tsparticles.shape.circle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-color@2.12.0/tsparticles.updater.color.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-opacity@2.12.0/tsparticles.updater.opacity.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-out-modes@2.12.0/tsparticles.updater.out-modes.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-size@2.12.0/tsparticles.updater.size.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.min.js"></script>
-<script type="text/javascript">
-    (async () => {
-        await loadLinksPreset(tsParticles);
 
-        await tsParticles.load("tsparticles", 
-        { background: {
-          color: '#FFFFFF'
-        },
-        particles: {
-          number: { density: { enable: true, area: 800 }, value: 40 },
-          color: {
-            value: '#000000'
-          },
-          opacity: {
-              value: 0.5
-          },
-          move: {
-            attract: { enable: false, rotateX: 600, rotateY: 1200 },
-            bounce: false,
-            direction: "none",
-            enable: true,
-            out_mode: "out",
-            random: false,
-            speed: 1,
-            straight: false
-          },
-          lineLinked: {
-            color: {
-              value: '#999999'
+    <!-- Load tsParticles --><!-- https://particles.js.org/ -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2.12.0/tsparticles.engine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-basic@2.12.0/tsparticles.basic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-interaction-particles-links@2.12.0/tsparticles.interaction.particles.links.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-move-base@2.12.0/tsparticles.move.base.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-circle@2.12.0/tsparticles.shape.circle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-color@2.12.0/tsparticles.updater.color.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-opacity@2.12.0/tsparticles.updater.opacity.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-out-modes@2.12.0/tsparticles.updater.out-modes.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-size@2.12.0/tsparticles.updater.size.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.min.js"></script>
+    <script type="text/javascript">
+        (async () => {
+            await loadLinksPreset(tsParticles);
+
+            await tsParticles.load("tsparticles", 
+            { background: {
+              color: '#FFFFFF'
             },
-            consent: true
-          }
-        },
-        interactivity: {
-          detect_on: 'window',
-          resize: true,
-        },
-        preset: "links" ,
-      });
-    })();
-</script>
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1d87f71b8cd34471a0823f383ef3b4e6"}'></script>
-<!-- End Cloudflare Web Analytics -->
-</body>
+            particles: {
+              number: { density: { enable: true, area: 800 }, value: 40 },
+              color: {
+                value: '#000000'
+              },
+              opacity: {
+                  value: 0.5
+              },
+              move: {
+                attract: { enable: false, rotateX: 600, rotateY: 1200 },
+                bounce: false,
+                direction: "none",
+                enable: true,
+                out_mode: "out",
+                random: false,
+                speed: 1,
+                straight: false
+              },
+              lineLinked: {
+                color: {
+                  value: '#999999'
+                },
+                consent: true
+              }
+            },
+            interactivity: {
+              detect_on: 'window',
+              resize: true,
+            },
+            preset: "links" ,
+          });
+        })();
+    </script>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1d87f71b8cd34471a0823f383ef3b4e6"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </body>
 </html>
