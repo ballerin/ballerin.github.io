@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h1 {
+  letter-spacing: 6px;
+}
+* {
+  box-sizing: inherit;
+}
+section {
+  height: 100%
+}
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.w3-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.page-header,
+.page-footer {
+    padding: 20px;
+}
+
+.page-body {
+    padding: 20px;
+}
+
+#tsparticles {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
