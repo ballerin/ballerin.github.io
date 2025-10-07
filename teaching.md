@@ -1,7 +1,7 @@
 ---
 layout: default
 page: "teaching"
-title: "Publications"
+title: "Teaching"
 ---
 
 <div class="w3-container w3-content w3-center">
