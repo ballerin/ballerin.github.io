@@ -48,6 +48,29 @@ section {
   z-index: -1;
 }
 
+table {
+  min-width: 50%;
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto; 
+  font-size: 0.95em;
+
+}
+
+th, td {
+  padding: 0.75em;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f7f7f7;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
 </style>
 </head>
 <body style="height:100%; padding: 0; margin: 0;">
@@ -65,9 +88,11 @@ section {
                 <div class="w3-row">
                     <div class="w3-container w3-card w3-white" style="padding: 32px;">
                       <h2 class="w3-text-grey w3-padding-16 w3-center">
-                          <i class="fa fa-pencil fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>{{ page.title }}
+                          <i class="fa fa-pen-nib fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>{{ page.title }}
                       </h2>
-                    {{ content }}
+                      <div class="w3-large">
+                        {{ content }}
+                      </div>
                 </div>
             </main>
             <!-- End Page Content -->
